@@ -10,3 +10,5 @@ Frontend (Next js)
 - Still exploring & Installing the components...
 
 
+Future Jobs:
+- Will further code & debug
