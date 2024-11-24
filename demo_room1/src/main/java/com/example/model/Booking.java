@@ -22,21 +22,22 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Booking {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long bookingId; //primary key
-	
-	private String guestFullName;
-	
-	private String guestEmail;
-	
-	private String description;
-	
-	private LocalDateTime startTime;
-	
-	private LocalDateTime endTime;
-	
-	@ManyToOne(fetch = FetchType.LAZY)
-    private Room room;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long bookingId; // primary key
 
-    
+	private String guestFullName;
+
+	private String guestEmail;
+
+	private String description;
+
+	private LocalDateTime startTime;
+
+	private LocalDateTime endTime;
+
+	private boolean isDeleted;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Room room;
+
 }
